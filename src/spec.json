@@ -1,0 +1,291 @@
+{
+  "title": "Scadenziario delle visite mediche",
+  "description": "Gestisci il personale, gli inviti, le visite e le scadenze. Registra le date con attenzione e conserva lo storico senza cancellare le righe.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "cruscotto",
+      "title": "Cruscotto",
+      "description": "Controlla le visite in arrivo e le pratiche da seguire.",
+      "metrics": [
+        {
+          "label": "Visite in scadenza nel mese",
+          "value": "4"
+        },
+        {
+          "label": "Inviti da programmare",
+          "value": "3"
+        },
+        {
+          "label": "Esiti da comunicare",
+          "value": "2"
+        },
+        {
+          "label": "Visite completate",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Dipendente",
+        "Profilo",
+        "Data visita",
+        "Scadenza",
+        "Stato",
+        "Azione da fare"
+      ],
+      "rows": [
+        [
+          "Lumo Riva",
+          "Addetto archivio",
+          "18/06/2026",
+          "18/06/2026",
+          "Invito da inviare",
+          "Preparare l'invito"
+        ],
+        [
+          "Vela Neri",
+          "Tecnica di laboratorio",
+          "22/06/2026",
+          "22/06/2026",
+          "Esito ricevuto",
+          "Comunicare al dirigente"
+        ],
+        [
+          "Nubi Sera",
+          "Addetto manutenzione",
+          "25/06/2026",
+          "25/06/2026",
+          "Da programmare",
+          "Verificare gli esami"
+        ],
+        [
+          "Lumo Dardi",
+          "Istruttrice amministrativa",
+          "29/06/2026",
+          "29/06/2026",
+          "Visita fissata",
+          "Controllare la data"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "personale",
+      "title": "Personale e visite",
+      "description": "Cerca una persona e filtra l'elenco per stato della visita. Le date restano registrate nello storico anche quando una visita viene annullata.",
+      "metrics": [],
+      "columns": [
+        "Dipendente",
+        "Profilo professionale",
+        "Ufficio",
+        "Data di nascita",
+        "Ultima visita",
+        "Prossima scadenza",
+        "Stato",
+        "Esami da fare"
+      ],
+      "rows": [
+        [
+          "Lumo Riva",
+          "Addetto archivio",
+          "Segreteria atti",
+          "14/03/1988",
+          "18/06/2025",
+          "18/06/2026",
+          "Invito da inviare",
+          "Visita generale"
+        ],
+        [
+          "Vela Neri",
+          "Tecnica di laboratorio",
+          "Servizi interni",
+          "02/11/1991",
+          "22/06/2025",
+          "22/06/2026",
+          "Esito ricevuto",
+          "Visita generale; controllo mirato"
+        ],
+        [
+          "Nubi Sera",
+          "Addetto manutenzione",
+          "Manutenzione",
+          "27/07/1985",
+          "25/06/2025",
+          "25/06/2026",
+          "Da programmare",
+          "Visita generale; controllo mirato"
+        ],
+        [
+          "Lumo Dardi",
+          "Istruttrice amministrativa",
+          "Segreteria atti",
+          "09/01/1993",
+          "29/06/2025",
+          "29/06/2026",
+          "Visita fissata",
+          "Visita generale"
+        ],
+        [
+          "Vela Orma",
+          "Addetta manutenzione",
+          "Manutenzione",
+          "16/05/1987",
+          "11/07/2025",
+          "11/07/2026",
+          "Completata",
+          "Visita generale; controllo mirato"
+        ]
+      ],
+      "form": [
+        "Dipendente",
+        "Profilo professionale",
+        "Ufficio",
+        "Data di nascita",
+        "Ultima visita",
+        "Prossima scadenza",
+        "Stato",
+        "Esami da fare"
+      ]
+    },
+    {
+      "id": "visite",
+      "title": "Storico delle visite",
+      "description": "Registra inviti, appuntamenti ed esiti. Se una data cambia, mantieni la registrazione precedente e aggiungi quella corretta.",
+      "metrics": [],
+      "columns": [
+        "Dipendente",
+        "Profilo",
+        "Ufficio",
+        "Data visita",
+        "Esito",
+        "Limitazioni",
+        "Dirigente informato",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo Riva",
+          "Addetto archivio",
+          "Segreteria atti",
+          "18/06/2025",
+          "Idoneo",
+          "Nessuna",
+          "Sì",
+          "Completata"
+        ],
+        [
+          "Vela Neri",
+          "Tecnica di laboratorio",
+          "Servizi interni",
+          "22/06/2025",
+          "Idonea con limitazioni",
+          "Evitare attività prolungate in piedi",
+          "No",
+          "Da comunicare"
+        ],
+        [
+          "Nubi Sera",
+          "Addetto manutenzione",
+          "Manutenzione",
+          "25/06/2025",
+          "In attesa",
+          "Da valutare",
+          "No",
+          "Invito da inviare"
+        ],
+        [
+          "Lumo Dardi",
+          "Istruttrice amministrativa",
+          "Segreteria atti",
+          "29/06/2025",
+          "In attesa",
+          "Da valutare",
+          "No",
+          "Visita fissata"
+        ]
+      ],
+      "form": [
+        "Dipendente",
+        "Profilo",
+        "Ufficio",
+        "Data visita",
+        "Esito",
+        "Limitazioni",
+        "Dirigente informato",
+        "Stato"
+      ]
+    },
+    {
+      "id": "protocolli",
+      "title": "Protocolli ed esami",
+      "description": "Consulta gli esami previsti per ogni profilo e registra gli aggiornamenti concordati per le visite.",
+      "metrics": [],
+      "columns": [
+        "Profilo professionale",
+        "Ufficio",
+        "Protocollo sanitario",
+        "Esami previsti",
+        "Frequenza",
+        "Concordato con",
+        "Data aggiornamento",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Addetto archivio",
+          "Segreteria atti",
+          "Protocollo Lumo A",
+          "Visita generale",
+          "Annuale",
+          "Medico competente e dirigente",
+          "10/01/2026",
+          "Attivo"
+        ],
+        [
+          "Tecnica di laboratorio",
+          "Servizi interni",
+          "Protocollo Vela B",
+          "Visita generale; controllo mirato",
+          "Annuale",
+          "Medico competente e responsabile sicurezza",
+          "12/01/2026",
+          "Attivo"
+        ],
+        [
+          "Addetto manutenzione",
+          "Manutenzione",
+          "Protocollo Nubi C",
+          "Visita generale; controllo mirato",
+          "Annuale",
+          "Medico competente, dirigente e responsabile sicurezza",
+          "15/01/2026",
+          "Attivo"
+        ],
+        [
+          "Istruttrice amministrativa",
+          "Segreteria atti",
+          "Protocollo Lumo D",
+          "Visita generale",
+          "Annuale",
+          "Medico competente e dirigente",
+          "17/01/2026",
+          "Attivo"
+        ]
+      ],
+      "form": [
+        "Profilo professionale",
+        "Ufficio",
+        "Protocollo sanitario",
+        "Esami previsti",
+        "Frequenza",
+        "Concordato con",
+        "Data aggiornamento",
+        "Stato"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "bordeaux-oro",
+    "fonts": "classico"
+  }
+}
